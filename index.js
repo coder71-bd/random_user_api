@@ -1,9 +1,12 @@
 import express from "express";
 import http from "http";
-
+import userRoutes from "./routes/userRoutes.js";
 const app = express();
 
+app.use("/user", userRoutes);
+
 app.get("/", (req, res) => {
+  W;
   res.send("Welcome to Random User API");
 });
 
