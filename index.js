@@ -7,7 +7,6 @@ app.use(express.json());
 app.use("/user", userRoutes);
 
 app.get("/", (req, res) => {
-  W;
   res.send("Welcome to Random User API");
 });
 
